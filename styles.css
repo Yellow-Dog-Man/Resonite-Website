@@ -1,0 +1,122 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	 padding-bottom:0;   
+}
+
+/* Custom styles for the footer */
+.footer {
+    margin-top: auto;
+	position: absolute;
+    padding: 20px;
+    background-color: rgba(26, 26, 26, 0.5); /* Partially grey and semi-transparent background */
+    color: #fff;
+    text-align: center;
+    border-top: 1px solid rgb(0, 0, 0); /* Add a white line at the bottom of the navbar */
+	left: 0;
+     right: 0;
+     bottom: -20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 102vh;
+}
+
+.navbar {
+    background-color: rgba(26, 26, 26, 0.5); /* Partially grey and semi-transparent background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Higher z-index to ensure navbar is above video */
+    border-bottom: 1px solid rgb(0, 0, 0); /* Add a white line at the bottom of the navbar */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white; /* Set link color to white */
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+     z-index: -1;
+}
+ 
+ .button {
+    background-color: hsl(0deg, 0%, 100%);
+    border-color: hsl(0deg, 0%, 86%);
+    border-width: 1px;
+    color: hsl(0deg, 0%, 21%);
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: calc(0.5em - 1px);
+    text-align: center;
+    white-space: nowrap;
+}  
+
+.download-button {
+    background: linear-gradient(90deg, #70BCFF 0%, #0071D6 100%);
+    border-radius: 16px;
+    outline: none;
+    border-width: 0;
+    box-shadow: inset 0px -2px 2px rgba(9, 105, 189, 0.4);
+    color: #FFFFFF;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s;
+}
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%); /* Apply 50% darkness to the video */
+}
+.title {
+    color: hsl(0, 0%, 100%);
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.125;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+        flex-grow: 1;
+        padding: 50px;
+}
+.large-text-intro {
+    font-size: 44px !important;
+}
+.has-text-shadow {
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.navbar-nav .nav-item {
+    margin-right: 15px; /* Add spacing between links */
+}
+
+.poppins-font {
+    font-family: 'Poppins', sans-serif;
+}
