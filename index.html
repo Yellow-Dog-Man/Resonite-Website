@@ -6,10 +6,32 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
+
+    <meta name="title" content="Resonite" />
+    <meta name="description" content="Dive into a brand new digital universe with infinite possibilities, Whether you come here to socialize and hang out with people around the world or to build, create and develop anything from beautiful art, interactive avatars and gadgets, to complex interactive worlds and games, Resonite is an endlessly customizable place where you'll be welcome and where you'll find a group to resonate with." />
+    <meta name="keywords" content="VR, SteamVR, Resonite, Yellow Dog Man, Protoflux">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://resonite.com/" />
+    <meta property="og:title" content="Resonite" />
+    <meta property="og:description" content="Dive into a brand new digital universe with infinite possibilities, Whether you come here to socialize and hang out with people around the world or to build, create and develop anything from beautiful art, interactive avatars and gadgets, to complex interactive worlds and games, Resonite is an endlessly customizable place where you'll be welcome and where you'll find a group to resonate with." />
+    <meta property="og:image" content="https://resonite.com/assets/images/logo.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://resonite.com/" />
+    <meta property="twitter:title" content="Resonite" />
+    <meta property="twitter:description" content="Dive into a brand new digital universe with infinite possibilities, Whether you come here to socialize and hang out with people around the world or to build, create and develop anything from beautiful art, interactive avatars and gadgets, to complex interactive worlds and games, Resonite is an endlessly customizable place where you'll be welcome and where you'll find a group to resonate with." />
+    <meta property="twitter:image" content="https://resonite.com/assets/images/logo.jpg" />
+
+
 </head>
 <body>
 
-<!-- START Bootstrap-Cookie-Alert -->
 <div class="alert text-center cookiealert" role="alert">
     <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
 
@@ -17,8 +39,6 @@
         I agree
     </button>
 </div>
-<!-- END Bootstrap-Cookie-Alert -->
-
 
     <div class="wrapper">
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -37,22 +57,37 @@
                         <li class="nav-item">
                             <a class="nav-link" href="https://www.patreon.com/YellowDogManStudios">Patreon</a>
                         </li>
+                        
+                            <ul class="navbar-nav">
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Socials
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="https://bsky.app/profile/resonite.com">Bluesky</a></li>
+                                  <li><a class="dropdown-item" href="https://discord.gg/resonite">Discord</a></li>
+                                  <li><a class="dropdown-item" href="https://twitch.tv/resoniteapp">Twitch</a></li>
+                                  <li><a class="dropdown-item" href="https://x.com/resoniteapp">Twitter / X</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+
 						<li class="nav-item">
                             <a class="nav-link" href="https://status.yellowdogman.com/">Service Status</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://yellowdogman.com/contact.html">Contact</a>
                         </li>
-						
-						
-                        <li class="nav-item">
+
+                        <!--<li class="nav-item">
                             <a class="btn btn-primary" href="https://store.steampowered.com/app/2519830" target="_blank">Download</a>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
             </div>
         </nav>
-        
+    </div>    
+
     <div class="video-background">
         <video autoplay muted loop>
             <source src="assets/movie480_vp9.webm" type="video/webm">
@@ -60,37 +95,36 @@
         </video>
     </div>
 	
- <div class="content text-center">
-					
-    <div class="container hero-start">
-        <div class="contents ">
+ <div class="content text-center">		
+    <div class="container">
+        <div class="contents">
             <h1 class="title">
                 Welcome to Resonite.
             </h1>
             <h2 class="large-text-intro has-text-shadow">
-                <span id="element"></span>
+                <span id="typeingtext"></span>
             </h2>
-            <p class="intro-text"><BR>
+            
+                <p class="intro-text"><BR>
                 Download the latest build from steam below to get started
             </p>
 
             <div class="buttons is-centered">
           
-                    <a class="button download-button" href="https://store.steampowered.com/app/2519830" target="_blank">Download</a>
+                    <a href="https://store.steampowered.com/app/2519830" target="_blank"><img src="assets/images/steam-store-badge.png" alt="Download on Steam"></a>
         
             </div>
-
+        
         </div>
     </div>
-
-	</div>
+</div>
         
-        <footer class="footer">
+
+<footer class="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-               
-                <font class="small">
+                <p class="small">
                     Your privacy matters to us. Read our <a href="policies/" class="text-light">Privacy Policy</a> to learn how we handle your personal information.
                 </p>
             </div>
@@ -98,21 +132,21 @@
     </div>
 </footer>
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-    <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
+<script>
+    var typed = new Typed('#typeingtext', {
       strings: ['Socialize with anyone.', 'Play, explore and share', 'Play, explore and share', 'Code and develop', 'Resonate with anything, anyone, anywhere...'],
       typeSpeed: 80,
       backSpeed: 40,
       smartBackspace: true, // this is a default
       loop: true
     });
-  </script>
-  <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</script>
+
+<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
