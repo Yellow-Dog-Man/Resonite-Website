@@ -4,6 +4,17 @@ on:
   push:
     paths:
       - 'version.txt' 
+    paths-ignore:
+      - '**/*.md'
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - '**/*.md'
+    paths:
+      - 'version.txt' 
 
 jobs:
   build-and-deploy:
