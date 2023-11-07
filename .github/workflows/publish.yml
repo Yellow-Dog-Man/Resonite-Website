@@ -2,8 +2,8 @@ name: Publish Website
 
 on:
   push:
-    tags:
-      - '*-release'
+    paths:
+      - 'version.txt' 
 
 jobs:
   build-and-deploy:
