@@ -19,14 +19,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      
-      - name: Set up SSH
-        run: |
-          mkdir -p ~/.ssh/
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -H ${{ secrets.WEB_SERVER_HOST }} >> ~/.ssh/known_hosts
-        shell: /usr/bin/bash -e {0}
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}      
 
       - name: Deploy to web server
         run: |
