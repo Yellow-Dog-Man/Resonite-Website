@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'version.txt' 
+      - '.github/workflows/publish.yml'
     branches:
       - main
   pull_request:
@@ -23,9 +24,10 @@ jobs:
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: unnecessary
+          
       - name: Adding Known Hosts
         run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
-      - name: Deploy to web server
-        run: |
-          scp -r ./* ${{ secrets.WEB_SERVER_USERNAME }}@${{ secrets.WEB_SERVER_HOST }}:/home/ydm/resonite
+      - name: Deploy with rsync
+        run: rsync -avz -e "ssh -p ${{ secrets.SSH_PORT }}" . ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/ydm/resonite
