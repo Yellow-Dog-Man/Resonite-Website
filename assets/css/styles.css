@@ -4,7 +4,6 @@ body, html {
     height: 100%;
     background: 000;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -43,6 +42,7 @@ body, html {
 
 .navbar-dark .navbar-nav .nav-link {
     color: white; /* Set link color to white */
+    white-space: nowrap;
 }
 
 .video-background {
@@ -81,6 +81,7 @@ body, html {
     transition: all 0.3s;
 }
 .video-background video {
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
@@ -120,4 +121,8 @@ body, html {
 
 .poppins-font {
     font-family: 'Poppins', sans-serif;
+}
+
+.home-page {
+    overflow: hidden;
 }
