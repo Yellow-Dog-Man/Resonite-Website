@@ -584,9 +584,10 @@ a {
   text-decoration: none;
 }
 
+/*
 .nav-link:hover {
   color: rgba(26, 27, 31, .75);
-}
+}*/
 
 .nav-link:focus-visible {
   outline-offset: 0px;
