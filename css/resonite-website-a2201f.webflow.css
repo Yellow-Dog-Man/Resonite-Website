@@ -414,13 +414,15 @@ a {
 }
 
 .navbar-master {
+  z-index: 5;
+  width: 100%;
   -webkit-text-fill-color: inherit;
   background-image: linear-gradient(#2b2f35, #2b2f35);
   background-clip: border-box;
   border-radius: 0;
-  margin-left: -5px;
-  margin-right: -5px;
-  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  position: fixed;
   right: auto;
 }
 
@@ -947,6 +949,7 @@ a {
 }
 
 .background-video {
+  z-index: .5;
   height: 750px;
   aspect-ratio: auto;
   object-fit: cover;
@@ -954,6 +957,7 @@ a {
   justify-content: center;
   align-items: center;
   margin: 75px -5px 0;
+  padding-top: 5px;
   display: flex;
   position: absolute;
   top: 0;
@@ -1095,11 +1099,12 @@ a {
 }
 
 .testimonial-column-dark {
+  z-index: 0;
   background-image: linear-gradient(rgba(17, 21, 29, .6), rgba(17, 21, 29, .6)), url('../images/_0027_ResoniteBranding_PosterArt_DevTip_02_v01b.jpg'), linear-gradient(#11151d, #11151d);
   background-position: 0 0, 50% 0, 0 0;
   background-size: auto, cover, auto;
   border-bottom: 1px solid #e4ebf3;
-  margin-bottom: -1px;
+  margin-bottom: 0;
   margin-left: -5px;
   margin-right: -5px;
   padding: 80px 30px;
@@ -1260,7 +1265,7 @@ a {
   width: 100%;
   height: 1px;
   background-color: #86888b;
-  margin-top: 70px;
+  margin-top: 30px;
   margin-bottom: 15px;
 }
 
@@ -1272,6 +1277,7 @@ a {
 }
 
 .footer-dark-3 {
+  z-index: 2;
   background-color: #2b2f35;
   border-bottom: 1px solid #e4ebf3;
   margin-left: -5px;
@@ -1281,11 +1287,10 @@ a {
 }
 
 .pricing-overview {
+  z-index: 1;
   background-color: #11151d;
   border-bottom: 1px solid #e4ebf3;
-  margin-bottom: -1px;
-  margin-left: -5px;
-  margin-right: -5px;
+  margin: -1px -5px;
   padding: 80px 30px;
   position: relative;
 }
@@ -1403,6 +1408,31 @@ a {
   background-image: url('../images/Features_Header_02.png');
   background-position: 50% 0;
   background-size: cover;
+}
+
+.body-8 {
+  background-color: #e1e1e0;
+}
+
+.flex-block-15 {
+  z-index: 0;
+  height: 500px;
+  background-color: #e1e1e0;
+  position: relative;
+}
+
+.flex-block-16 {
+  z-index: 1;
+  height: 500px;
+  background-color: #61d1fa;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.flex-block-17 {
+  height: 500px;
+  background-color: #59eb5c;
+  position: relative;
 }
 
 @media screen and (max-width: 991px) {
