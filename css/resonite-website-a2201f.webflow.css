@@ -1522,6 +1522,7 @@ a {
 
 .hero-heading-right-3-copy-2 {
   z-index: 1;
+  height: 433.102px;
   background-color: #e1e1e0;
   border-bottom: 1px solid #e4ebf3;
   margin-bottom: 0;
@@ -1797,6 +1798,10 @@ a {
   display: grid;
 }
 
+.body-10 {
+  background-color: #e1e1e0;
+}
+
 @media screen and (max-width: 991px) {
   .container-2 {
     max-width: 728px;
@@ -1906,6 +1911,10 @@ a {
     padding: 3px;
     font-size: 9.3px;
     line-height: 14px;
+  }
+
+  .hero-heading-right-3-copy-2 {
+    height: 588.762px;
   }
 
   .container-10 {
@@ -2113,6 +2122,7 @@ a {
   }
 
   .hero-heading-right-3-copy-2 {
+    height: 555.532px;
     padding: 60px 15px;
   }
 
@@ -2349,6 +2359,10 @@ a {
     padding: 3px;
     font-size: 5.8px;
     line-height: 8.7px;
+  }
+
+  .hero-heading-right-3-copy-2 {
+    height: 585.683px;
   }
 
   .container-10 {
