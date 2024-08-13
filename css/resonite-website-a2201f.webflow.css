@@ -420,7 +420,6 @@ a {
 
 .body {
   background-color: #11151d;
-  margin-right: 3px;
 }
 
 .navbar-master {
@@ -1008,7 +1007,7 @@ a {
   justify-content: center;
   align-items: center;
   height: 750px;
-  margin: 75px -5px 0;
+  margin: 75px 0 0;
   padding-top: 5px;
   display: flex;
   position: absolute;
@@ -1018,8 +1017,6 @@ a {
 .flex-block-8 {
   background-image: linear-gradient(233deg, #ba64f2eb, #f8f7708f);
   height: 750px;
-  margin-left: -5px;
-  margin-right: -5px;
 }
 
 .div-block-10 {
@@ -1186,8 +1183,6 @@ a {
   background-size: auto, cover, auto;
   border-bottom: 1px solid #e4ebf3;
   margin-bottom: 0;
-  margin-left: -5px;
-  margin-right: -5px;
   padding: 80px 30px;
   position: relative;
 }
@@ -1363,8 +1358,6 @@ a {
   background-color: #2b2f35;
   border-bottom: 1px solid #e4ebf3;
   margin-top: -1px;
-  margin-left: -5px;
-  margin-right: -5px;
   padding: 50px 30px 15px;
   position: relative;
 }
@@ -1373,7 +1366,6 @@ a {
   z-index: 1;
   background-color: #11151d;
   border-bottom: 1px solid #e4ebf3;
-  margin: -1px -5px;
   padding: 80px 30px;
   position: relative;
 }
