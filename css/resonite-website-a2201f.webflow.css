@@ -7007,6 +7007,10 @@ a {
   align-self: start;
 }
 
+#w-node-_94b3c992-6e84-9ddb-59fb-4a4d840429d2-7e8e2d3e, #w-node-_94b3c992-6e84-9ddb-59fb-4a4d840429dc-7e8e2d3e, #w-node-_94b3c992-6e84-9ddb-59fb-4a4d840429e6-7e8e2d3e {
+  grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
 @media screen and (max-width: 991px) {
   #w-node-_766cd561-15ea-ae5f-e395-5cc50c8b70e6-fa530bc7, #w-node-_4e496d86-be31-43b8-ecb6-4ef8b9df5be2-fa530bc7, #w-node-_1a74592e-493c-2de0-c9e8-be4eb54acb83-fa530bc7, #w-node-_2e03cd88-a060-9251-954a-599db6a1bc5b-fa530bc7, #w-node-_138b2c9e-6760-4180-d3ec-817fc79eb5bc-fa530bc7, #w-node-b1529b9c-f496-3f89-b645-470609e1203a-fa530bc7, #w-node-d007db75-50f1-8059-e8ae-fadd85441f45-fa530bc7, #w-node-_4d1acbe6-a45a-e2c2-8ea3-707579b28376-fa530bc7, #w-node-_2e09f7f0-c625-af5a-478d-c0432486fe2b-fa530bc7 {
     justify-self: center;
