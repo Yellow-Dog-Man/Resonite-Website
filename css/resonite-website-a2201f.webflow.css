@@ -3981,6 +3981,10 @@ a {
   margin-bottom: 35px;
 }
 
+.efi-pr-01-pricing-grid-wrapper {
+  width: 100%;
+}
+
 .efi-paragraph {
   color: #11151d;
   font-size: 15px;
@@ -3995,13 +3999,14 @@ a {
 
 .efi-pr-01-container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 86%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .efi-pr-01 {
   background-color: #86888b00;
+  width: 100%;
   min-height: 1100px;
   padding: 25px 5% 37px;
 }
@@ -4031,6 +4036,7 @@ a {
   color: #e1e1e0;
   margin-bottom: 0;
   font-weight: 500;
+  position: static;
 }
 
 .efi-paragraph-copy {
@@ -5401,6 +5407,7 @@ a {
   grid-column-gap: 20px;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
 }
 
 @media screen and (max-width: 991px) {
@@ -5769,6 +5776,14 @@ a {
     margin-bottom: 9.55px;
   }
 
+  .efi-pr-01-tab-menu {
+    text-align: center;
+  }
+
+  .efi-pr-01-grid {
+    grid-template-columns: 1fr;
+  }
+
   .efi-pr-01 {
     aspect-ratio: auto;
     -webkit-text-fill-color: inherit;
@@ -5781,6 +5796,13 @@ a {
     background-image: linear-gradient(#0003, #0003), url('../images/11x17_ResoniteFeatured_Website_01_00000.jpg');
     background-size: auto, cover;
     background-clip: border-box;
+  }
+
+  .efi-h2-copy {
+    text-align: center;
+    width: 100%;
+    position: static;
+    inset: 0%;
   }
 
   .container-20 {
@@ -6769,7 +6791,7 @@ a {
   }
 
   .efi-tab-link.black.w--current {
-    height: 56.9167px;
+    height: auto;
     margin-top: 9.55px;
     margin-bottom: 9.55px;
   }
