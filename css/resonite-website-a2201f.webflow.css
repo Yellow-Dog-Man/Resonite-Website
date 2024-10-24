@@ -2037,9 +2037,9 @@ a {
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
   grid-auto-columns: 1fr;
-  width: auto;
+  width: 1500px;
   max-width: none;
-  margin: 30px 0;
+  margin: 30px auto;
   padding-top: 30px;
   padding-bottom: 30px;
   display: block;
@@ -2120,6 +2120,7 @@ a {
   text-align: center;
   font-size: 14px;
   line-height: 16px;
+  text-decoration: none;
 }
 
 .footer-dark-3 {
@@ -2138,7 +2139,7 @@ a {
   background-color: #11151d;
   background-image: linear-gradient(#61d1fa, #ff7676 89%, #59eb5c 100%, #11151d 100%, #11151d);
   border-bottom: 1px solid #e4ebf3;
-  margin: -1px 0;
+  margin: -1px auto;
   padding: 80px 30px;
   position: relative;
 }
@@ -3869,6 +3870,7 @@ a {
 
 .efi-h2 {
   color: #11151d;
+  height: 116.989px;
   margin-bottom: 0;
   font-weight: 500;
 }
@@ -3878,6 +3880,7 @@ a {
 }
 
 .efi-big-paragraph {
+  height: 67.5px;
   margin-bottom: 9.55px;
   font-size: 15px;
   font-weight: 400;
@@ -5410,6 +5413,13 @@ a {
   width: 100%;
 }
 
+.link-block-27 {
+  text-align: center;
+  vertical-align: baseline;
+  text-decoration: none;
+  display: block;
+}
+
 @media screen and (max-width: 991px) {
   .container-2 {
     max-width: 728px;
@@ -6034,6 +6044,10 @@ a {
 
   .testimonial-column-dark {
     padding: 60px 15px;
+  }
+
+  .container-9 {
+    width: auto;
   }
 
   .footer-wrapper-2 {
@@ -6781,11 +6795,46 @@ a {
     margin-right: 6px;
   }
 
+  .efi-pricing-button-wrapper {
+    height: auto;
+    display: block;
+  }
+
+  .efi-h2 {
+    height: 99.9997%;
+  }
+
+  .efi-price-block {
+    height: auto;
+  }
+
+  .efi-h4 {
+    line-height: 32px;
+  }
+
+  .efi-pricing-header {
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+
+  .efi-pr-01-pricing-cell {
+    width: auto;
+    padding: 40px 5px;
+  }
+
   .efi-tab-text {
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 26px;
+    display: flex;
   }
 
   .efi-tab-link.black {
+    width: auto;
+    height: auto;
     margin-top: 9.55px;
     margin-bottom: 9.55px;
   }
@@ -6794,6 +6843,12 @@ a {
     height: auto;
     margin-top: 9.55px;
     margin-bottom: 9.55px;
+  }
+
+  .efi-pr-01-container {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .efi-pricing-button-copy {
