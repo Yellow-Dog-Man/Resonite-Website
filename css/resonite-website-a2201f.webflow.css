@@ -5420,6 +5420,17 @@ a {
   display: block;
 }
 
+.footer-copyright-center-2-copy {
+  color: #e1e1e0;
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 991px) {
   .container-2 {
     max-width: 728px;
