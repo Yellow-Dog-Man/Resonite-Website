@@ -2,16 +2,12 @@ name: Publish Website
 
 on:
   push:
-    paths:
-      - 'version.txt' 
-      - '.github/workflows/publish.yml'
     branches:
       - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -20,7 +16,6 @@ jobs:
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: unnecessary
-          
       - name: Adding Known Hosts
         run: ssh-keyscan -H ${{ secrets.WEB_SERVER_HOST }} >> ~/.ssh/known_hosts
 
