@@ -1219,6 +1219,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 0;
+  padding-left: 30px;
   display: flex;
 }
 
