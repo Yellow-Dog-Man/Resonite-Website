@@ -21,3 +21,8 @@ jobs:
 
       - name: Deploy with rsync
         run: rsync -avz --exclude=.github/ --exclude=.git/ -e ssh . ${{ secrets.WEB_SERVER_USERNAME }}@${{ secrets.WEB_SERVER_HOST }}:/home/ydm/resonite
+      - name: Clear Cloudflare Cache
+        uses: Cyb3r-Jak3/action-cloudflare-cache@v2.0.0
+        with:
+          zone: resonite.com
+          api_token: ${{ secrets.CLOUDFLARE_TOKEN }}
