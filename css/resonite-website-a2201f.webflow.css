@@ -1240,14 +1240,7 @@ a {
   font-weight: 400;
 }
 
-.nav-link:focus-visible {
-  outline-offset: 0px;
-  color: #0050bd;
-  border-radius: 4px;
-  outline: 2px solid #0050bd;
-}
-
-.nav-link[data-wf-focus-visible] {
+.nav-link:focus-visible, .nav-link[data-wf-focus-visible] {
   outline-offset: 0px;
   color: #0050bd;
   border-radius: 4px;
@@ -1276,14 +1269,7 @@ a {
   color: #1a1b1fbf;
 }
 
-.nav-dropdown-toggle:focus-visible {
-  outline-offset: 0px;
-  color: #0050bd;
-  border-radius: 5px;
-  outline: 2px solid #0050bd;
-}
-
-.nav-dropdown-toggle[data-wf-focus-visible] {
+.nav-dropdown-toggle:focus-visible, .nav-dropdown-toggle[data-wf-focus-visible] {
   outline-offset: 0px;
   color: #0050bd;
   border-radius: 5px;
@@ -1316,14 +1302,7 @@ a {
   font-weight: 500;
 }
 
-.nav-dropdown-link:focus-visible {
-  outline-offset: 0px;
-  color: #0050bd;
-  border-radius: 5px;
-  outline: 2px solid #0050bd;
-}
-
-.nav-dropdown-link[data-wf-focus-visible] {
+.nav-dropdown-link:focus-visible, .nav-dropdown-link[data-wf-focus-visible] {
   outline-offset: 0px;
   color: #0050bd;
   border-radius: 5px;
@@ -3070,13 +3049,7 @@ a {
   left: -50px;
 }
 
-.gallery-slider-left:focus-visible {
-  outline-offset: 0px;
-  border-radius: 5px;
-  outline: 2px solid #0050bd;
-}
-
-.gallery-slider-left[data-wf-focus-visible] {
+.gallery-slider-left:focus-visible, .gallery-slider-left[data-wf-focus-visible] {
   outline-offset: 0px;
   border-radius: 5px;
   outline: 2px solid #0050bd;
@@ -3094,13 +3067,7 @@ a {
   right: -50px;
 }
 
-.gallery-slider-right:focus-visible {
-  outline-offset: 0px;
-  border-radius: 5px;
-  outline: 2px solid #0050bd;
-}
-
-.gallery-slider-right[data-wf-focus-visible] {
+.gallery-slider-right:focus-visible, .gallery-slider-right[data-wf-focus-visible] {
   outline-offset: 0px;
   border-radius: 5px;
   outline: 2px solid #0050bd;
@@ -4425,14 +4392,7 @@ a {
   font-weight: 400;
 }
 
-.nav-link-copy:focus-visible {
-  outline-offset: 0px;
-  color: #0050bd;
-  border-radius: 4px;
-  outline: 2px solid #0050bd;
-}
-
-.nav-link-copy[data-wf-focus-visible] {
+.nav-link-copy:focus-visible, .nav-link-copy[data-wf-focus-visible] {
   outline-offset: 0px;
   color: #0050bd;
   border-radius: 4px;
@@ -7274,10 +7234,6 @@ a {
 @media screen and (max-width: 767px) {
   #w-node-c97ba7f9-bd5c-2652-d991-8bf277ba70d4-373750a3 {
     grid-area: span 1 / span 12 / span 1 / span 12;
-    align-self: start;
-  }
-
-  #w-node-f1072766-613b-4547-bfa4-6ffb2368c50f-8fd3b8f0 {
     align-self: start;
   }
 }
