@@ -134,7 +134,6 @@
 .w-commerce-commercecartapplepaybutton {
   color: #fff;
   cursor: pointer;
-  -webkit-appearance: none;
   appearance: none;
   background-color: #000;
   border-width: 0;
@@ -157,7 +156,6 @@
 .w-commerce-commercecartquickcheckoutbutton {
   color: #fff;
   cursor: pointer;
-  -webkit-appearance: none;
   appearance: none;
   background-color: #000;
   border-width: 0;
@@ -202,7 +200,6 @@
 }
 
 .w-commerce-commercecheckoutemailinput {
-  -webkit-appearance: none;
   appearance: none;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -229,7 +226,6 @@
 }
 
 .w-commerce-commercecheckoutshippingfullname {
-  -webkit-appearance: none;
   appearance: none;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -252,7 +248,6 @@
 }
 
 .w-commerce-commercecheckoutshippingstreetaddress {
-  -webkit-appearance: none;
   appearance: none;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -275,7 +270,6 @@
 }
 
 .w-commerce-commercecheckoutshippingstreetaddressoptional {
-  -webkit-appearance: none;
   appearance: none;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -310,7 +304,6 @@
 }
 
 .w-commerce-commercecheckoutshippingcity {
-  -webkit-appearance: none;
   appearance: none;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -333,7 +326,6 @@
 }
 
 .w-commerce-commercecheckoutshippingstateprovince {
-  -webkit-appearance: none;
   appearance: none;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -356,7 +348,6 @@
 }
 
 .w-commerce-commercecheckoutshippingzippostalcode {
-  -webkit-appearance: none;
   appearance: none;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -379,7 +370,6 @@
 }
 
 .w-commerce-commercecheckoutshippingcountryselector {
-  -webkit-appearance: none;
   appearance: none;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -447,7 +437,6 @@
 }
 
 .w-commerce-commercecheckoutcardnumber {
-  -webkit-appearance: none;
   appearance: none;
   cursor: text;
   background-color: #fafafa;
@@ -471,7 +460,6 @@
 }
 
 .w-commerce-commercecheckoutcardexpirationdate {
-  -webkit-appearance: none;
   appearance: none;
   cursor: text;
   background-color: #fafafa;
@@ -495,7 +483,6 @@
 }
 
 .w-commerce-commercecheckoutcardsecuritycode {
-  -webkit-appearance: none;
   appearance: none;
   cursor: text;
   background-color: #fafafa;
@@ -538,7 +525,6 @@
 }
 
 .w-commerce-commercecheckoutbillingfullname {
-  -webkit-appearance: none;
   appearance: none;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -561,7 +547,6 @@
 }
 
 .w-commerce-commercecheckoutbillingstreetaddress {
-  -webkit-appearance: none;
   appearance: none;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -584,7 +569,6 @@
 }
 
 .w-commerce-commercecheckoutbillingstreetaddressoptional {
-  -webkit-appearance: none;
   appearance: none;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -607,7 +591,6 @@
 }
 
 .w-commerce-commercecheckoutbillingcity {
-  -webkit-appearance: none;
   appearance: none;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -630,7 +613,6 @@
 }
 
 .w-commerce-commercecheckoutbillingstateprovince {
-  -webkit-appearance: none;
   appearance: none;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -653,7 +635,6 @@
 }
 
 .w-commerce-commercecheckoutbillingzippostalcode {
-  -webkit-appearance: none;
   appearance: none;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -676,7 +657,6 @@
 }
 
 .w-commerce-commercecheckoutbillingcountryselector {
-  -webkit-appearance: none;
   appearance: none;
   background-color: #fafafa;
   border: 1px solid #ddd;
@@ -767,7 +747,6 @@
 .w-commerce-commercecheckoutplaceorderbutton {
   color: #fff;
   cursor: pointer;
-  -webkit-appearance: none;
   appearance: none;
   text-align: center;
   background-color: #3898ec;
@@ -1750,7 +1729,7 @@ a {
 
 .flex-block-8 {
   background-image: linear-gradient(0deg, #ba64f2 1%, #c176e2d4 23%, #dab1ae4d 52%, #e3c59c61 75%, #f7f5728c 100%, #f8f7708f);
-  height: 500px;
+  height: 300px;
   margin-left: 0;
   margin-right: 0;
 }
@@ -1762,7 +1741,7 @@ a {
   align-items: center;
   width: 100%;
   height: 20%;
-  padding-top: 300px;
+  padding-top: 0;
   display: flex;
 }
 
@@ -1923,7 +1902,7 @@ a {
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
-  padding: 80px 30px;
+  padding: 0 0 60px;
   position: relative;
 }
 
@@ -2409,10 +2388,10 @@ a {
 
 .hero-image.shadow-two {
   aspect-ratio: 1;
+  width: 50%;
   box-shadow: none;
   background-image: none;
   align-self: center;
-  width: 50%;
   margin-top: 15.46px;
   margin-bottom: 15.46px;
 }
@@ -5462,6 +5441,48 @@ a {
   background-color: #2b2f35;
 }
 
+.button-10 {
+  background-color: #458fab;
+}
+
+.button-hero-home {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 30%;
+  max-width: 40%;
+  height: 33.624%;
+  max-height: 33.624%;
+  color: var(--light-color);
+  text-align: center;
+  text-shadow: 2px 1px 1px #0003;
+  vertical-align: middle;
+  background-color: #2b2f35;
+  border-radius: 9.6px;
+  justify-content: center;
+  align-self: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 9px;
+  padding-left: 9px;
+  padding-right: 9px;
+  font-size: 39px;
+  font-weight: 600;
+  line-height: 50px;
+  display: flex;
+}
+
+.button-hero-home:hover {
+  color: var(--light-color);
+  background-color: #86888b;
+}
+
+.button-hero-home:active {
+  color: var(--dark-color);
+  background-color: #e1e1e0;
+}
+
 @media screen and (max-width: 991px) {
   .container-2 {
     max-width: 728px;
@@ -5526,6 +5547,7 @@ a {
 
   .background-video {
     margin-top: 89px;
+    padding-top: 0;
   }
 
   .div-block-10 {
@@ -5551,6 +5573,7 @@ a {
 
   .text-block-20 {
     margin-top: 0;
+    margin-bottom: 150px;
     padding-top: 15px;
   }
 
@@ -5998,6 +6021,14 @@ a {
   .hero-split-4 {
     max-width: 100%;
     margin-bottom: 40px;
+  }
+
+  .button-hero-home {
+    text-shadow: 2px 2px 3px #11151d99;
+    width: 45%;
+    max-width: 45%;
+    margin-bottom: 30px;
+    padding-left: 15px;
   }
 }
 
@@ -6447,6 +6478,11 @@ a {
   .hero-heading-left-2 {
     height: 700px;
     padding: 60px 15px;
+  }
+
+  .button-hero-home {
+    width: 50%;
+    max-width: 50%;
   }
 }
 
@@ -6987,9 +7023,15 @@ a {
     font-size: 30px;
     line-height: 35px;
   }
+
+  .button-hero-home {
+    margin-top: 12px;
+    font-size: 9.8px;
+    line-height: 13px;
+  }
 }
 
-#w-node-_94b3c992-6e84-9ddb-59fb-4a4d840429d2-efa77703, #w-node-_94b3c992-6e84-9ddb-59fb-4a4d840429dc-efa77703, #w-node-_94b3c992-6e84-9ddb-59fb-4a4d840429e6-efa77703, #w-node-_5993f6c7-141f-9a06-cb94-63b781692ea4-81692e9e, #w-node-_5993f6c7-141f-9a06-cb94-63b781692eab-81692e9e, #w-node-_5993f6c7-141f-9a06-cb94-63b781692eb4-81692e9e {
+#w-node-_5993f6c7-141f-9a06-cb94-63b781692ea4-81692e9e, #w-node-_5993f6c7-141f-9a06-cb94-63b781692eab-81692e9e, #w-node-_5993f6c7-141f-9a06-cb94-63b781692eb4-81692e9e {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
