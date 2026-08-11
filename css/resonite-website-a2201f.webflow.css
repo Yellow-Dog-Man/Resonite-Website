@@ -1945,7 +1945,9 @@ a {
 
 .arrow-embed {
   color: #f8f770;
+  margin-top: 4px;
   margin-left: 2px;
+  font-size: 18px;
   font-weight: 400;
   display: flex;
 }
@@ -1985,6 +1987,7 @@ a {
 .text-block-21 {
   color: #f8f770;
   -webkit-text-stroke-color: #f8f770;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -2086,11 +2089,12 @@ a {
 .footer-dark-3 {
   z-index: 2;
   background-color: #2b2f35;
-  border-bottom: 1px solid #e4ebf3;
+  border-bottom: 0 #fff;
   margin-top: -1px;
   margin-left: 0;
   margin-right: 0;
   padding: 50px 30px 15px;
+  display: block;
   position: relative;
 }
 
