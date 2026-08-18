@@ -1,0 +1,4 @@
+/policies/index.html    https://policies.resonite.com/                          301
+/policies/*             https://policies.resonite.com/:splat                    301
+/policies               https://policies.resonite.com/                          301
+/Whitepaper.pdf         https://downloads.resonite.com/public/Whitepaper.pdf    301
