@@ -122,6 +122,9 @@ input.w-button {
   position-anchor: auto;
   position-area: top center;
 }
+.w-popover[popover]:not(:popover-open) {
+  display: none;
+}
 html[data-w-dynpage] [data-w-cloak] {
   color: transparent !important;
 }

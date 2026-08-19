@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Thu Aug 13 2026 05:29:09 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Aug 19 2026 07:07:54 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="677c22e97faa942b1eba139a" data-wf-site="656504e52e383d09efa776a6" lang="en">
 <head>
   <meta charset="utf-8">
@@ -17,13 +17,26 @@
   <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
   <link href="../images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="../images/webclip.png" rel="apple-touch-icon">
+  <script type="text/javascript">
+// See: https://learn.microsoft.com/en-us/azure/azure-monitor/app/javascript-sdk?tabs=javascriptwebsdkloaderscript
+// Yes, I hate this too - Prime
+!(function (cfg){function e(){cfg.onInit&&cfg.onInit(n)}var x,w,D,t,E,n,C=window,O=document,b=C.location,q="script",I="ingestionendpoint",L="disableExceptionTracking",j="ai.device.";"instrumentationKey"[x="toLowerCase"](),w="crossOrigin",D="POST",t="appInsightsSDK",E=cfg.name||"appInsights",(cfg.name||C[t])&&(C[t]=E),n=C[E]||function(g){var f=!1,m=!1,h={initialize:!0,queue:[],sv:"8",version:2,config:g};function v(e,t){var n={},i="Browser";function a(e){e=""+e;return 1===e.length?"0"+e:e}return n[j+"id"]=i[x](),n[j+"type"]=i,n["ai.operation.name"]=b&&b.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(h.sv||h.version),{time:(i=new Date).getUTCFullYear()+"-"+a(1+i.getUTCMonth())+"-"+a(i.getUTCDate())+"T"+a(i.getUTCHours())+":"+a(i.getUTCMinutes())+":"+a(i.getUTCSeconds())+"."+(i.getUTCMilliseconds()/1e3).toFixed(3).slice(2,5)+"Z",iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}},ver:undefined,seq:"1",aiDataContract:undefined}}var n,i,t,a,y=-1,T=0,S=["js.monitor.azure.com","js.cdn.applicationinsights.io","js.cdn.monitor.azure.com","js0.cdn.applicationinsights.io","js0.cdn.monitor.azure.com","js2.cdn.applicationinsights.io","js2.cdn.monitor.azure.com","az416426.vo.msecnd.net"],o=g.url||cfg.src,r=function(){return s(o,null)};function s(d,t){if((n=navigator)&&(~(n=(n.userAgent||"").toLowerCase()).indexOf("msie")||~n.indexOf("trident/"))&&~d.indexOf("ai.3")&&(d=d.replace(/(\/)(ai\.3\.)([^\d]*)$/,function(e,t,n){return t+"ai.2"+n})),!1!==cfg.cr)for(var e=0;e<S.length;e++)if(0<d.indexOf(S[e])){y=e;break}var n,i=function(e){var a,t,n,i,o,r,s,c,u,l;h.queue=[],m||(0<=y&&T+1<S.length?(a=(y+T+1)%S.length,p(d.replace(/^(.*\/\/)([\w\.]*)(\/.*)$/,function(e,t,n,i){return t+S[a]+i})),T+=1):(f=m=!0,s=d,!0!==cfg.dle&&(c=(t=function(){var e,t={},n=g.connectionString;if(n)for(var i=n.split(";"),a=0;a<i.length;a++){var o=i[a].split("=");2===o.length&&(t[o[0][x]()]=o[1])}return t[I]||(e=(n=t.endpointsuffix)?t.location:null,t[I]="https://"+(e?e+".":"")+"dc."+(n||"services.visualstudio.com")),t}()).instrumentationkey||g.instrumentationKey||"",t=(t=(t=t[I])&&"/"===t.slice(-1)?t.slice(0,-1):t)?t+"/v2/track":g.endpointUrl,t=g.userOverrideEndpointUrl||t,(n=[]).push((i="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",o=s,u=t,(l=(r=v(c,"Exception")).data).baseType="ExceptionData",l.baseData.exceptions=[{typeName:"SDKLoadFailed",message:i.replace(/\./g,"-"),hasFullStack:!1,stack:i+"\nSnippet failed to load ["+o+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(b&&b.pathname||"_unknown_")+"\nEndpoint: "+u,parsedStack:[]}],r)),n.push((l=s,i=t,(u=(o=v(c,"Message")).data).baseType="MessageData",(r=u.baseData).message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+l+")").replace(/\"/g,"")+'"',r.properties={endpoint:i},o)),s=n,c=t,JSON&&((u=C.fetch)&&!cfg.useXhr?u(c,{method:D,body:JSON.stringify(s),mode:"cors"}):XMLHttpRequest&&((l=new XMLHttpRequest).open(D,c),l.setRequestHeader("Content-type","application/json"),l.send(JSON.stringify(s)))))))},a=function(e,t){m||setTimeout(function(){!t&&h.core||i()},500),f=!1},p=function(e){var n=O.createElement(q),e=(n.src=e,t&&(n.integrity=t),n.setAttribute("data-ai-name",E),cfg[w]);return!e&&""!==e||"undefined"==n[w]||(n[w]=e),n.onload=a,n.onerror=i,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||a(0,t)},cfg.ld&&cfg.ld<0?O.getElementsByTagName("head")[0].appendChild(n):setTimeout(function(){O.getElementsByTagName(q)[0].parentNode.appendChild(n)},cfg.ld||0),n};p(d)}cfg.sri&&(n=o.match(/^((http[s]?:\/\/.*\/)\w+(\.\d+){1,5})\.(([\w]+\.){0,2}js)$/))&&6===n.length?(d="".concat(n[1],".integrity.json"),i="@".concat(n[4]),l=window.fetch,t=function(e){if(!e.ext||!e.ext[i]||!e.ext[i].file)throw Error("Error Loading JSON response");var t=e.ext[i].integrity||null;s(o=n[2]+e.ext[i].file,t)},l&&!cfg.useXhr?l(d,{method:"GET",mode:"cors"}).then(function(e){return e.json()["catch"](function(){return{}})}).then(t)["catch"](r):XMLHttpRequest&&((a=new XMLHttpRequest).open("GET",d),a.onreadystatechange=function(){if(a.readyState===XMLHttpRequest.DONE)if(200===a.status)try{t(JSON.parse(a.responseText))}catch(e){r()}else r()},a.send())):o&&r();try{h.cookie=O.cookie}catch(k){}function e(e){for(;e.length;)!function(t){h[t]=function(){var e=arguments;f||h.queue.push(function(){h[t].apply(h,e)})}}(e.pop())}var c,u,l="track",d="TrackPage",p="TrackEvent",l=(e([l+"Event",l+"PageView",l+"Exception",l+"Trace",l+"DependencyData",l+"Metric",l+"PageViewPerformance","start"+d,"stop"+d,"start"+p,"stop"+p,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),h.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4},(g.extensionConfig||{}).ApplicationInsightsAnalytics||{});return!0!==g[L]&&!0!==l[L]&&(e(["_"+(c="onerror")]),u=C[c],C[c]=function(e,t,n,i,a){var o=u&&u(e,t,n,i,a);return!0!==o&&h["_"+c]({message:e,url:t,lineNumber:n,columnNumber:i,error:a,evt:C.event}),o},g.autoExceptionInstrumented=!0),h}(cfg.cfg),(C[E]=n).queue&&0===n.queue.length?(n.queue.push(e),n.trackPageView({})):e();})({
+  src: "https://js.monitor.azure.com/scripts/b/ai.3.gbl.min.js",
+  name: "resoniteWebsiteAnalytics",
+  crossOrigin: "anonymous",
+  cfg: { // Application Insights Configuration
+    connectionString: "InstrumentationKey=6850459b-5435-4bff-a863-35acc659fc3f;IngestionEndpoint=https://telemetry.resonite.com;ApplicationId=005d1911-3f66-41f6-9b80-c768316d18ce",
+    // Re-enabled by consent banner
+    disableCookiesUsage: true
+}});
+</script>
 </head>
 <body class="body-11">
   <div class="navbar-master">
     <div data-w-id="21ab5999-14dc-a856-5027-e3ad49ba1f23" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-logo-left-container shadow-three w-nav">
       <div class="container">
         <div class="navbar-wrapper">
-          <a href="../index.html" class="navbar-brand-2 w-nav-brand"><img src="../images/RSN_Logo_Color_1080.png" loading="lazy" width="159" sizes="159px" alt="" srcset="../images/RSN_Logo_Color_1080-p-500.png 500w, ../images/RSN_Logo_Color_1080-p-800.png 800w, ../images/RSN_Logo_Color_1080-p-1080.png 1080w, ../images/RSN_Logo_Color_1080.png 1081w" class="image-9"></a>
+          <a href="../index.html" class="navbar-brand-2 w-nav-brand"><img src="../images/RSN_Logo_Color_1080.png" loading="lazy" width="159" sizes="(max-width: 479px) 92vw, 159px" alt="" srcset="../images/RSN_Logo_Color_1080-p-500.png 500w, ../images/RSN_Logo_Color_1080-p-800.png 800w, ../images/RSN_Logo_Color_1080-p-1080.png 1080w, ../images/RSN_Logo_Color_1080.png 1081w" class="image-9"></a>
           <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
             <ul role="list" class="nav-menu-two w-list-unstyled">
               <li>
@@ -133,16 +146,16 @@
         <div data-delay="4000" data-animation="slide" class="gallery-slide w-slider" data-autoplay="false" data-easing="ease" data-hide-arrows="true" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="500" data-infinite="true" id="w-node-ad3f57aa-92c6-7d16-2d9a-4eac4abc1b3b-1eba139a">
           <div class="w-slider-mask">
             <div class="gallery-slide-wrapper w-slide">
-              <div class="gallery-slide-image"><img sizes="(max-width: 479px) 100vw, (max-width: 991px) 20vw, 14vw" srcset="../images/Cello-climbs-with-ease-in-the-Kelosite-Lab-p-500.png 500w, ../images/Cello-climbs-with-ease-in-the-Kelosite-Lab-p-800.png 800w, ../images/Cello-climbs-with-ease-in-the-Kelosite-Lab-p-1080.png 1080w, ../images/Cello-climbs-with-ease-in-the-Kelosite-Lab.png 1382w" src="../images/Cello-climbs-with-ease-in-the-Kelosite-Lab.png" loading="lazy" alt="" class="gallery-image"></div>
+              <div class="gallery-slide-image"><img sizes="100vw" srcset="../images/Cello-climbs-with-ease-in-the-Kelosite-Lab-p-500.png 500w, ../images/Cello-climbs-with-ease-in-the-Kelosite-Lab-p-800.png 800w, ../images/Cello-climbs-with-ease-in-the-Kelosite-Lab-p-1080.png 1080w, ../images/Cello-climbs-with-ease-in-the-Kelosite-Lab.png 1382w" src="../images/Cello-climbs-with-ease-in-the-Kelosite-Lab.png" loading="lazy" alt="" class="gallery-image"></div>
             </div>
             <div class="gallery-slide-wrapper w-slide">
-              <div class="gallery-slide-image"><img id="w-node-ad3f57aa-92c6-7d16-2d9a-4eac4abc1b49-1eba139a" sizes="(max-width: 479px) 100vw, (max-width: 991px) 20vw, 14vw" src="../images/Eyebots-debate-in-the-Plant-Lab.png" loading="lazy" alt="" srcset="../images/Eyebots-debate-in-the-Plant-Lab-p-500.png 500w, ../images/Eyebots-debate-in-the-Plant-Lab-p-800.png 800w, ../images/Eyebots-debate-in-the-Plant-Lab-p-1080.png 1080w, ../images/Eyebots-debate-in-the-Plant-Lab.png 1229w" class="gallery-image"></div>
+              <div class="gallery-slide-image"><img id="w-node-ad3f57aa-92c6-7d16-2d9a-4eac4abc1b49-1eba139a" sizes="100vw" src="../images/Eyebots-debate-in-the-Plant-Lab.png" loading="lazy" alt="" srcset="../images/Eyebots-debate-in-the-Plant-Lab-p-500.png 500w, ../images/Eyebots-debate-in-the-Plant-Lab-p-800.png 800w, ../images/Eyebots-debate-in-the-Plant-Lab-p-1080.png 1080w, ../images/Eyebots-debate-in-the-Plant-Lab.png 1229w" class="gallery-image"></div>
             </div>
             <div class="gallery-slide-wrapper w-slide">
-              <div class="gallery-slide-image"><img id="w-node-ad3f57aa-92c6-7d16-2d9a-4eac4abc1b4e-1eba139a" sizes="(max-width: 479px) 100vw, (max-width: 991px) 20vw, 14vw" src="../images/Baxter-makes-an-offer-in-the-Plant-Lab.png" loading="lazy" alt="" srcset="../images/Baxter-makes-an-offer-in-the-Plant-Lab-p-500.png 500w, ../images/Baxter-makes-an-offer-in-the-Plant-Lab-p-800.png 800w, ../images/Baxter-makes-an-offer-in-the-Plant-Lab-p-1080.png 1080w, ../images/Baxter-makes-an-offer-in-the-Plant-Lab.png 1536w" class="gallery-image"></div>
+              <div class="gallery-slide-image"><img id="w-node-ad3f57aa-92c6-7d16-2d9a-4eac4abc1b4e-1eba139a" sizes="100vw" src="../images/Baxter-makes-an-offer-in-the-Plant-Lab.png" loading="lazy" alt="" srcset="../images/Baxter-makes-an-offer-in-the-Plant-Lab-p-500.png 500w, ../images/Baxter-makes-an-offer-in-the-Plant-Lab-p-800.png 800w, ../images/Baxter-makes-an-offer-in-the-Plant-Lab-p-1080.png 1080w, ../images/Baxter-makes-an-offer-in-the-Plant-Lab.png 1536w" class="gallery-image"></div>
             </div>
             <div class="gallery-slide-wrapper w-slide">
-              <div class="gallery-slide-image"><img id="w-node-_3651c072-cc9d-0d4f-5506-dd9772ee5754-1eba139a" sizes="(max-width: 479px) 100vw, (max-width: 991px) 20vw, 14vw" src="../images/The-Blackhawk.png" loading="lazy" alt="" srcset="../images/The-Blackhawk-p-500.png 500w, ../images/The-Blackhawk-p-800.png 800w, ../images/The-Blackhawk-p-1080.png 1080w, ../images/The-Blackhawk-p-1600.png 1600w, ../images/The-Blackhawk-p-2000.png 2000w, ../images/The-Blackhawk.png 2304w" class="gallery-image"></div>
+              <div class="gallery-slide-image"><img id="w-node-_3651c072-cc9d-0d4f-5506-dd9772ee5754-1eba139a" sizes="100vw" src="../images/The-Blackhawk.png" loading="lazy" alt="" srcset="../images/The-Blackhawk-p-500.png 500w, ../images/The-Blackhawk-p-800.png 800w, ../images/The-Blackhawk-p-1080.png 1080w, ../images/The-Blackhawk-p-1600.png 1600w, ../images/The-Blackhawk-p-2000.png 2000w, ../images/The-Blackhawk.png 2304w" class="gallery-image"></div>
             </div>
           </div>
           <div class="gallery-slider-left w-slider-arrow-left">
@@ -156,10 +169,106 @@
       </div>
     </div>
   </section>
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="w-layout-blockcontainer w-container">
+      <div id="w-node-_6ea448ee-979f-7cd5-3e95-3a42964aaee2-e7106468" class="w-layout-layout quick-stack wf-layout-layout">
+        <div class="w-layout-cell cell-2">
+          <div class="rich-text-block w-richtext">
+            <p class="paragraph-9">We use cookies to enhance your browsing experience, and analyze our traffic. See our <a href="https://policies.resonite.com/PrivacyPolicy">Privacy Policy</a> and <a href="https://policies.resonite.com/CookiePolicy" target="_blank">Cookie Policy</a> for more information.</p>
+          </div>
+        </div>
+        <div class="w-layout-cell cell-3">
+          <a id="cookie-accept" href="#" class="button-11 w-button">Accept</a>
+          <a id="cookie-reject" href="#" class="button-12 w-button">Reject</a>
+        </div>
+      </div>
+    </div>
+    <div class="w-embed w-script">
+      <script type="text/javascript">
+// Largely taken from: https://www.nicopicotto.dev/blog/cookie-consent-webflow/
+// I have no idea what I'm doing - Prime
+const CONSENT_KEY = 'cookieConsent';
+const CONSENT_DURATION_DAYS = 180;
+const DEBUG = false;
+const log = (...args) => DEBUG && console.log(...args);
+const BANNER_ID = "cookie-banner";
+function setCookie(name, value, days) {
+    const expires = new Date();
+    expires.setDate(expires.getDate() + days);
+    document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires.toUTCString()}; path=/; SameSite=Lax`;
+}
+function getCookie(name) {
+    const match = document.cookie.split('; ').find((row) => row.startsWith(name + '='));
+    return match ? decodeURIComponent(match.split('=')[1]) : null;
+}
+function getConsent() {
+    const saved = getCookie(CONSENT_KEY);
+    if (!saved) return null;
+    try {
+        return JSON.parse(saved);
+    } catch {
+        log('Error parsing consent cookie');
+        return null;
+    }
+}
+function isExpired(dateString) {
+    const diffDays = (new Date() - new Date(dateString)) / (1000 * 60 * 60 * 24);
+    return diffDays > CONSENT_DURATION_DAYS;
+}
+function handleConsent(accepted) {
+    log('User selected:', accepted ? 'ACCEPT' : 'REJECT');
+    const previous = getConsent();
+    const previousAccepted = previous ? previous.accepted : null;
+    setCookie(CONSENT_KEY, JSON.stringify({
+        accepted,
+        date: new Date().toISOString()
+    }), CONSENT_DURATION_DAYS);
+    const cookieBanner = document.getElementById(BANNER_ID);
+    if (cookieBanner) cookieBanner.style.display = 'none';
+    if (accepted) {
+        loadApplicationInsights();
+    } else {
+        if (previousAccepted === true) {
+            // The user withdrew consent — reload to stop any scripts already running
+            setTimeout(() => location.reload(), 100);
+        }
+        log('Tracking scripts will NOT be loaded.');
+    }
+}
+function bindConsentButtons() {
+    const acceptBtn = document.getElementById('cookie-accept');
+    const rejectBtn = document.getElementById('cookie-reject');
+    if (acceptBtn) acceptBtn.onclick = () => handleConsent(true);
+    if (rejectBtn) rejectBtn.onclick = () => handleConsent(false);
+}
+function loadApplicationInsights() {
+    log('Enabling application insights cookies');
+	if (window.resoniteWebsiteAnalytics) {
+		window.resoniteWebsiteAnalytics.getCookieMgr().setEnabled(true);
+	}
+}
+document.addEventListener('DOMContentLoaded', () => {
+    log("DOM Content Loaded");
+    const cookieBanner = document.getElementById(BANNER_ID);
+    const consent = getConsent();
+    if (consent && !isExpired(consent.date)) {
+        log("CONSENT");
+        if (consent.accepted) loadApplicationInsights();
+        if (cookieBanner) cookieBanner.style.display = 'none';
+    } else {
+        log("NO CONSENT");
+        // No valid consent found — show the modal
+        if (cookieBanner) cookieBanner.style.display = 'block';
+        bindConsentButtons();
+    }
+});
+</script>
+    </div>
+  </div>
   <section class="footer-dark-3">
     <div class="container-9">
       <div class="footer-wrapper-2">
-        <a href="#" class="navbar-brand-2 w-nav-brand"><img src="../images/RSN_Logo_Color_1080.png" loading="lazy" width="159" sizes="(max-width: 479px) 76vw, 158.9962158203125px" alt="" srcset="../images/RSN_Logo_Color_1080-p-500.png 500w, ../images/RSN_Logo_Color_1080-p-800.png 800w, ../images/RSN_Logo_Color_1080-p-1080.png 1080w, ../images/RSN_Logo_Color_1080.png 1081w"></a>
+        <a href="#" class="navbar-brand-2 w-nav-brand"><img src="../images/RSN_Logo_Color_1080.png" loading="lazy" width="159" sizes="159px" alt="" srcset="../images/RSN_Logo_Color_1080-p-500.png 500w, ../images/RSN_Logo_Color_1080-p-800.png 800w, ../images/RSN_Logo_Color_1080-p-1080.png 1080w, ../images/RSN_Logo_Color_1080.png 1081w"></a>
         <div class="footer-content-2">
           <div id="w-node-_003482cb-8fb4-c479-9e0a-dea6cfa5fa36-1eba139a" class="footer-block-2">
             <div class="title-small-2">Company</div>
