@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Aug 19 2026 07:07:54 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Aug 19 2026 07:48:06 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="65a98f2260c42b2b73a28f91" data-wf-site="656504e52e383d09efa776a6" lang="en">
 <head>
   <meta charset="utf-8">
@@ -24,6 +24,10 @@
   src: "https://js.monitor.azure.com/scripts/b/ai.3.gbl.min.js",
   name: "resoniteWebsiteAnalytics",
   crossOrigin: "anonymous",
+  onInit: function(sdk) {
+    window.appInsightsReady = true;
+    document.dispatchEvent(new CustomEvent('appInsightsReady', { detail: sdk }));
+  },
   cfg: { // Application Insights Configuration
     connectionString: "InstrumentationKey=6850459b-5435-4bff-a863-35acc659fc3f;IngestionEndpoint=https://telemetry.resonite.com;ApplicationId=005d1911-3f66-41f6-9b80-c768316d18ce",
     // Re-enabled by consent banner

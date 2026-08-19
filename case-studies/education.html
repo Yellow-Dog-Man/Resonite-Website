@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Aug 19 2026 07:07:54 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Aug 19 2026 07:48:06 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="677c22e97faa942b1eba139a" data-wf-site="656504e52e383d09efa776a6" lang="en">
 <head>
   <meta charset="utf-8">
@@ -24,6 +24,10 @@
   src: "https://js.monitor.azure.com/scripts/b/ai.3.gbl.min.js",
   name: "resoniteWebsiteAnalytics",
   crossOrigin: "anonymous",
+  onInit: function(sdk) {
+    window.appInsightsReady = true;
+    document.dispatchEvent(new CustomEvent('appInsightsReady', { detail: sdk }));
+  },
   cfg: { // Application Insights Configuration
     connectionString: "InstrumentationKey=6850459b-5435-4bff-a863-35acc659fc3f;IngestionEndpoint=https://telemetry.resonite.com;ApplicationId=005d1911-3f66-41f6-9b80-c768316d18ce",
     // Re-enabled by consent banner
@@ -191,6 +195,8 @@ const CONSENT_KEY = 'cookieConsent';
 const CONSENT_DURATION_DAYS = 180;
 const DEBUG = false;
 const log = (...args) => DEBUG && console.log(...args);
+let cookieConsent = false;
+document.addEventListener('appInsightsReady', enableCookies);
 const BANNER_ID = "cookie-banner";
 function setCookie(name, value, days) {
     const expires = new Date();
@@ -226,7 +232,7 @@ function handleConsent(accepted) {
     const cookieBanner = document.getElementById(BANNER_ID);
     if (cookieBanner) cookieBanner.style.display = 'none';
     if (accepted) {
-        loadApplicationInsights();
+        onConsent();
     } else {
         if (previousAccepted === true) {
             // The user withdrew consent — reload to stop any scripts already running
@@ -241,11 +247,20 @@ function bindConsentButtons() {
     if (acceptBtn) acceptBtn.onclick = () => handleConsent(true);
     if (rejectBtn) rejectBtn.onclick = () => handleConsent(false);
 }
-function loadApplicationInsights() {
+function onConsent() {
     log('Enabling application insights cookies');
-	if (window.resoniteWebsiteAnalytics) {
+    cookieConsent = true;
+	enableCookies();
+}
+// Covers race conditions
+function enableCookies() {
+  if (!cookieConsent)
+  	return;
+  if (!window.appInsightsReady)
+    return;
+  if (window.resoniteWebsiteAnalytics) {
 		window.resoniteWebsiteAnalytics.getCookieMgr().setEnabled(true);
-	}
+  }
 }
 document.addEventListener('DOMContentLoaded', () => {
     log("DOM Content Loaded");
@@ -253,7 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const consent = getConsent();
     if (consent && !isExpired(consent.date)) {
         log("CONSENT");
-        if (consent.accepted) loadApplicationInsights();
+        if (consent.accepted) onConsent();
         if (cookieBanner) cookieBanner.style.display = 'none';
     } else {
         log("NO CONSENT");
